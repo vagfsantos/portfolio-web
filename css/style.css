@@ -1,0 +1,16 @@
+body{
+	padding-top: 120px;
+}
+
+img{
+	max-width:100%;
+}
+
+.row{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.menu{
+	padding: 20px 0;
+}
