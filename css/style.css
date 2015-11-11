@@ -1,9 +1,9 @@
 #carregando{
 	width:100%;
 	height: 100%;
-	position: absolute;
+	position: fixed;
 	background: #fff;
-	z-index:5;
+	z-index:99999;
 }
 #carregando img{
 	position: absolute;
@@ -42,6 +42,7 @@ img{
 .row{
 	padding-top: 80px;
 	padding-bottom: 80px;
+	box-sizing: border-box;
 }
 
 main.container-fluid{
@@ -64,15 +65,31 @@ main.container-fluid{
 /* CUSTOM */
 .menu{
 	padding: 20px 0;
+	border: none;
 }
 
 #menu{
 	top:0;
-	width:80%;
+	width:70%;
 	height:100%;
 	position: fixed;
-	background: #ccc;
-	z-index:1;
+	background: #fedc00;
+	z-index:5;
+}
+
+#menu li{
+	margin-bottom: 1em;
+}
+
+#menu a{
+	color: #1a1a1a;
+	font-size:1.5em;
+	text-align: center;
+	box-sizing:border-box;
+}
+
+#menu a:hover{
+	border-top:1px solid #1a1a1a;
 }
 
 #btn-menu{
@@ -80,8 +97,8 @@ main.container-fluid{
 	position: fixed;
 	border: 1px solid #fedc00;
 	color:#fedc00;
-	left:5%;
-	bottom:5%;
+	right:2%;
+	bottom:2%;
 	background: #1a1a1a;
 	z-index:10;
 }
@@ -111,24 +128,18 @@ main.container-fluid{
 	position: relative;
 }
 
-.bg-image:before{
-	content: "";
-	width: 100%;
-	height: 490px;
-	position: absolute;
-	background: #000 none repeat scroll 0% 0%;
-	top: 0;
-	opacity: .9;
-	z-index: 1;
-}
-
 .thumbnail{
 	overflow: hidden;
 }
 
 
 .logo{
-	height:100px;
+	height:auto;
+}
+
+
+#nav-logo h1{
+	text-align: center;
 }
 
 .projeto img{
@@ -149,6 +160,10 @@ main.container-fluid{
 #sobre a{
 	color:#1a1a1a;
 	text-decoration: underline;
+}
+
+#sobre img{
+	border-radius:100%;
 }
 
 
@@ -186,23 +201,43 @@ main.container-fluid{
 }
 
 
-
+/* Rensposivo - desktop */
 @media screen and (min-width:770px){
 	#menu{
 		position: relative;
-		top:25px;
+		top:30px;
+		width:auto;
 		background: transparent;
 		float:right;
+		text-align: left;
 	}
 	
 	#nav-logo h1{
 		position: relative;
 		top:32px;
+		text-align: left;
 	}
 
 	#nav-logo{
 		position: relative;
 		top:-20px;
+	}
+
+	.logo{
+		width: auto;
+		height: 100px;
+	}
+
+	.navbar-brand{
+		margin-top: 20px;
+	}
+
+	.nome-rodape{
+   		margin-top: 55px;
+	}
+
+	.menu-rodape{
+		margin-top: 45px;
 	}
 }
 
