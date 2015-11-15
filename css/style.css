@@ -69,9 +69,10 @@ main.container-fluid{
 }
 
 #menu{
-	top:0;
+	bottom:5%;
+	left:0;
 	width:70%;
-	height:100%;
+	height:250px;
 	position: fixed;
 	background: #fedc00;
 	z-index:5;
@@ -142,6 +143,10 @@ main.container-fluid{
 	text-align: center;
 }
 
+.projeto figure figcaption p{
+	min-height:130px;
+}
+
 .projeto img{
 	cursor: pointer;
 	transition: .3s ease;
@@ -166,6 +171,10 @@ main.container-fluid{
 	border-radius:100%;
 }
 
+.habilidades div,
+.ferramentas div{
+	margin-bottom:4em;
+}
 
 .habilidades figure img,
 .ferramentas figure img{
@@ -202,13 +211,13 @@ main.container-fluid{
 
 
 /* Rensposivo - desktop */
-@media screen and (min-width:770px){
+@media all and (min-width:768px){
 	#menu{
 		position: relative;
-		top:30px;
+		/*top:80px;*/
 		width:auto;
 		background: transparent;
-		float:right;
+		float:none;
 		text-align: left;
 	}
 	
@@ -238,6 +247,18 @@ main.container-fluid{
 
 	.menu-rodape{
 		margin-top: 45px;
+	}
+
+	.habilidades div,
+	.ferramentas div{
+		margin-bottom:0;
+	}
+}
+
+@media all and (min-width:990px){
+	#menu{
+		top:30px;
+		float:right;
 	}
 }
 
